@@ -18,7 +18,7 @@ class RegistrationController extends Controller
     }
 
     public function insert(RegistrationRequest $req){
-
+        
         $customer = new Customer;
         $customer->full_name = $req->fullname;
         $customer->user_name = $req->username;
@@ -32,5 +32,5 @@ class RegistrationController extends Controller
         $customer->save();
         return redirect()->route('login.index');
         }
-
+        
 }
