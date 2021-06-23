@@ -31,7 +31,8 @@
             <td>{{$product->status}}</</td>
             <td>{{$product->vendor_id}}</</td>
             <td>
-                <a href="#"> Edit </a>|
+                <a href="#"> Detail </a>|
+                <a href="#"> Edit </a>
                 <a href="#"> Delete </a>
             </td>
         </tr>

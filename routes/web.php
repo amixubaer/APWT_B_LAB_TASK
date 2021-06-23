@@ -44,3 +44,8 @@ Route::get('/system/product_management/existing_products', 'ProductController@ex
 Route::get('/system/product_management/upcoming_products', 'ProductController@upcomingIndex')->name('Product.upcomingIndex');
 Route::get('/system/product_management/add_product', 'ProductController@addIndex')->name('Product.addIndex');
 Route::post('/system/product_management/add_product', 'ProductController@addProduct')->name('Product.addProduct');
+
+Route::get('system/product_management/product/{{$product->id}}/
+vendor_details/{{$product->vendor_id}}', 'ProductController@details');
+
+Route::get('/logout', 'LogoutController@index')->name('logout.index');;
