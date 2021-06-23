@@ -31,10 +31,11 @@ Route::get('/system/sales/ecommerce', 'EcommerceController@index')->name('Ecomme
 
 Route::get('/system/product_management', 'ProductController@index')->name('Product.index');
 
-Route::get('/system/product_management/existing_products', 'ProductController@existingIndex')->name('Product.existingIndex');
-Route::get('/system/product_management/upcoming_products', 'ProductController@upcomingIndex')->name('Product.upcomingIndex');
-Route::get('/system/product_management/add_product', 'ProductController@addIndex')->name('Product.addIndex');
-Route::post('/system/product_management/add_product', 'ProductController@addProduct')->name('Product.addProduct');
+Route::get('/system/sales/physical_store', 'PhysicalController@index')->name('Physical.index');
+Route::post('/system/sales/physical_store', 'PhysicalController@addPhysical')->name('Physical.addPhysical');
+Route::get('/system/sales/social_media', 'SocialController@index')->name('Social.index');
+Route::get('/system/sales/ecommerce', 'EcommerceController@index')->name('Ecommerce.index');
+
 
 Route::get('/system/product_management', 'ProductController@index')->name('Product.index');
 
