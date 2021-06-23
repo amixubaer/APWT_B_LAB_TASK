@@ -27,11 +27,7 @@ class ProductController extends Controller
 
 
     public function addProduct(Request $req){
-       // $user = User::find($id);
-    //   $vendor=Vendor::where('full_name',$req->vname)->get();
-        //$vid = $vendor->vendor_id;
-
-        //$vendor = DB::table('vendors')->get();
+        
         $vid = DB::table('vendors')->where('full_name', $req->vname)->value('vendor_id');
 
 
