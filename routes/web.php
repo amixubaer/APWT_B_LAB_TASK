@@ -22,3 +22,10 @@ Route::get('/registration', 'RegistrationController@index')->name('registration.
 Route::post('/registration', 'RegistrationController@insert')->name('registration.insert');
 
 Route::get('/system', 'SystemController@index')->name('system.index');
+
+
+Route::get('/system/sales', 'SalesController@index')->name('Sales.index');
+
+Route::get('/system/sales/physical_store', 'PhysicalController@index')->name('Physical.index');
+Route::get('/system/sales/social_media', 'SocialController@index')->name('Social.index');
+Route::get('/system/sales/ecommerce', 'EcommerceController@index')->name('Ecommerce.index');
