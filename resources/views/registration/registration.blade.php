@@ -29,8 +29,8 @@
 				<label for="cname">Company Name :</label>
 				<input type="text" placeholder="Enter Company Name" name="cname" id="cname" > <br> <br>
 
-				<label for="pnumber">Phone Number :</label>
-				<input type="number" placeholder="Enter Phone Number" name="pnumber" id="pnumber" > <br> <br>
+				<label for="phone">Phone Number :</label>
+				<input type="number" placeholder="Enter Phone Number" name="phone" id="phone" > <br> <br>
 
 				<label for="city">City :</label>
 				<input type="text" placeholder="Enter City" name="city" id="city" > <br> <br>
