@@ -29,7 +29,7 @@ class RegistrationRequest extends FormRequest
             'email' => 'email:rfc,dns|required|min:10|max:50',
             'password'=> 'required|min:8|max:20',
             'con-pass'=> 'required|min:8|max:20',
-            'phone' => 'required|min:11|max:15|numeric',
+            'phone' => 'required|min:11|numeric',
             'cname' => 'required|min:3|max:20',
             'city' => 'required|min:3|max:20',
             'country' => 'required|min:3|max:20',
