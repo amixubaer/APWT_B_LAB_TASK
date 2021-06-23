@@ -24,11 +24,11 @@ class RegistrationRequest extends FormRequest
     public function rules()
     {
         return [
-            'full-name' => 'required|min:3|max:30',
+            'fullname' => 'required|min:3|max:30',
             'username'=> 'required|min:5',
             'email' => 'email:rfc,dns|required|min:10|max:50',
             'password'=> 'required|min:8|max:20',
-            'con-pass'=> 'required|min:8|max:20',
+            'conpass'=> 'required|min:8|max:20',
             'phone' => 'required|min:11|numeric',
             'cname' => 'required|min:3|max:20',
             'city' => 'required|min:3|max:20',
